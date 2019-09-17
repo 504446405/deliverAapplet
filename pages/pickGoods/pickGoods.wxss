@@ -1,0 +1,25 @@
+.pickGoods-body {
+  width: 100%;
+  height: 100vh;
+  padding: 30rpx;
+  background-color: #f8f8f8;
+}
+.pickGoods-body .pickGoods-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 108rpx;
+  padding: 15rpx 0;
+  background: #ffffff;
+  box-shadow: 0px 0px 20rpx 0rpx rgba(102, 102, 102, 0.1);
+}
+.pickGoods-body .pickGoods-footer button {
+  width: 690rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 36rpx;
+  background: #a32635;
+  border-radius: 10rpx;
+  color: #ffffff;
+}

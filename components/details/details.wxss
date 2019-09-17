@@ -1,0 +1,29 @@
+.orderDatails-data {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.orderDatails-orderNumber {
+  display: flex;
+}
+.orderDatails-orderNumber .left,
+.orderDatails-orderNumber .right {
+  height: 28rpx;
+  line-height: 28rpx;
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #666666;
+  margin-top: 30rpx;
+}
+.orderDatails-orderNumber .left:first-child {
+  width: 170rpx;
+}
+.orderDatails-title {
+  height: 28rpx;
+  line-height: 28rpx;
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #333333;
+}

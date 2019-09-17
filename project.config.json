@@ -1,0 +1,110 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.8.1",
+	"appid": "wxffcee072ea939870",
+	"projectname": "deliverMan",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 8,
+			"list": [
+				{
+					"id": -1,
+					"name": "帮助",
+					"pathName": "pages/help/help",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "订单分类",
+					"pathName": "pages/orderIndex/orderIndex",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "登录",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "启动日志",
+					"pathName": "pages/logs/logs",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "抢单 订单详情",
+					"pathName": "pages/orderDetails/orderDatails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "已完成订单详情",
+					"pathName": "pages/orderHistory/orderHistory",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单准备中",
+					"pathName": "pages/prepare/prepare",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "提货确认页面",
+					"pathName": "pages/pickGoods/pickGoods",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

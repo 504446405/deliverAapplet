@@ -1,0 +1,10 @@
+<!-- 提货确认-->
+<view class="pickGoods-body">
+	<Details/>
+	<view class="pickGoods-footer">
+		<button bindtap="affirmNum">
+			确认提货单无误
+		</button>
+	</view>
+</view>
+

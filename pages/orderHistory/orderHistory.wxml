@@ -1,0 +1,216 @@
+<!-- 已完成订单详情-->
+<view class="orderHistory">
+	<view style="height:30rpx;">
+	</view>
+
+	<view class="orderHistory-body">
+		<!--订单详情 标题-->
+		<view class="orderHistory-form" bindtap="pullDownShowDetails">
+			<view class="orderHistory-form-left">
+				<view class="orderHistory-form-circle {{!detailsBl?'borderColor':''}}"  />
+				<view class="orderHistory-form-arrows  {{!detailsBl?'fontColor':''}}">
+					订单详情
+				</view>
+			</view>
+			<view class="orderHistory-form-right  {{!detailsBl?'arrowsColor':''}}" />
+		</view>
+		<!--订单详情 -->
+		<view class="orderHistory-details" hidden="{{detailsBl}}">
+			<view class="left">
+				<view>
+					订单号:
+				</view>
+				<view>
+					123123123
+				</view>
+			</view>
+			<view class="left">
+				<view>
+					举办人:
+				</view>
+				<view>
+					123123123
+				</view>
+
+			</view>
+			<view class="left">
+				<view>
+					联系方式:
+				</view>
+				<view>
+					1231231
+				</view>
+
+			</view>
+			<view class="left">
+				<view>
+					举办时间:
+				</view>
+				<view>
+					1231231
+				</view>
+			</view>
+			<view class="left">
+				<view>
+					酒店名字:
+				</view>
+				<view>
+					123123123
+				</view>
+			</view>
+			<view class="left">
+				<view>
+					举办地址:
+				</view>
+				<view>
+					12312312
+				</view>
+					<image style="width:24rpx;margin-left:24rpx;" src="/images/orderIndex/address.png" mode="widthFix"/>
+			</view>
+			<view class="left">
+				<view>
+					配酒公司:
+				</view>
+				<view>
+					12312312
+				</view>
+			</view>
+			<view class="left">
+				<view>
+					配酒地址:
+				</view>
+				<view>
+					1231231
+				</view>
+					<image style="width:24rpx;margin-left:24rpx;" src="/images/orderIndex/address.png" mode="widthFix"/>
+			</view>
+			<view class="left">
+				<view>
+					配酒数量:
+				</view>
+				<view>
+					12312314
+				</view>
+			</view>
+		</view>
+    <view style="border:1rpx solid rgba(234,234,234,1)">
+    </view>
+		<!--宴会详情 标题-->
+		<view class="orderHistory-form" bindtap="pullDownShowFeast">
+			<view class="orderHistory-form-left">
+				<view class="orderHistory-form-circle  {{!feastBl?'borderColor':''}}" />
+				<view class="orderHistory-form-arrows  {{!feastBl?'fontColor':''}}">
+					宴会详情
+				</view>
+			</view>
+			<view class="orderHistory-form-right {{!feastBl?'arrowsColor':''}}" />
+		</view>
+		<!--宴会详情-->
+		<view class="orderHistory-feast" hidden="{{feastBl}}">
+			<view class="feast">
+				<view>
+					活动人数:
+				</view>
+				<view>
+					123123
+				</view>
+			</view>
+			<view class="feast">
+				<view>
+					活动桌数:
+				</view>
+				<view>
+					123123
+				</view>
+			</view>
+			<view class="feast">
+				现场照片:
+			</view>
+			<view class="feast-img">
+				<image src="http://img1.imgtn.bdimg.com/it/u=348840611,3702053108&fm=26&gp=0.jpg" mode="widthFix" />
+				<image src="http://img1.imgtn.bdimg.com/it/u=348840611,3702053108&fm=26&gp=0.jpg" mode="widthFix" />
+			</view>
+		</view>
+    <view style="border:1rpx solid rgba(234,234,234,1)">
+    </view>
+		<!--消耗详情 标题-->
+		<view class="orderHistory-form" bindtap="pullDownShowExpend">
+			<view class="orderHistory-form-left">
+				<view class="orderHistory-form-circle {{!expendBl?'borderColor':''}}" />
+				<view class="orderHistory-form-arrows {{!expendBl?'fontColor':''}}">
+					消耗详情
+				</view>
+			</view>
+			<view class="orderHistory-form-right  {{!expendBl?'arrowsColor':''}}" />
+		</view>
+		<!--消耗详情-->
+		<view class="orderHistory-expend" hidden="{{expendBl}}">
+			<view class="expend">
+				<view>
+					配酒数量:
+				</view>
+				<view>
+					A酒(60瓶)
+				</view>
+				<view>
+					B酒(60瓶)
+				</view>
+			</view>
+			<view class="expend">
+				<view>
+					剩余数量:
+				</view>
+				<view>
+					A酒(4瓶)
+				</view>
+				<view>
+					B酒(1瓶)
+				</view>
+			</view>
+			<view class="expend">
+				<view>
+					损坏数量:
+				</view>
+				<view>
+					A酒(4瓶)
+				</view>
+				<view>
+					B酒(1瓶)
+				</view>
+			</view>
+			<view class="expend">
+				现场照片:
+			</view>
+			<view class="expend-img">
+				<image src="http://img1.imgtn.bdimg.com/it/u=348840611,3702053108&fm=26&gp=0.jpg" mode="widthFix" />
+				<image src="http://img1.imgtn.bdimg.com/it/u=348840611,3702053108&fm=26&gp=0.jpg" mode="widthFix" />
+			</view>
+		</view>
+    <view style="border:1rpx solid rgba(234,234,234,1)">
+    </view>
+		<!--结单详情 标题-->
+		<view class="orderHistory-form" bindtap="pullDownShowEnd">
+			<view class="orderHistory-form-left">
+				<view class="orderHistory-form-circle  {{!endBL?'borderColor':''}}" />
+				<view class="orderHistory-form-arrows  {{!endBL?'fontColor':''}}">
+					结单详情
+				</view>
+			</view>
+			<view class="orderHistory-form-right  {{!endBL?'arrowsColor':''}}" />
+		</view>
+		<!-- 结单详情-->
+		<view class="orderHistory-end" hidden="{{endBL}}">
+			<view class="end">
+				<view>
+					结单情况:
+				</view>
+				<view>
+					13231241234
+				</view>
+			</view>
+		</view>
+    <view style="border:1rpx solid rgba(234,234,234,1)">
+    </view>
+	</view>
+</view>
+

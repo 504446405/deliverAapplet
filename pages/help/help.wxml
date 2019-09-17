@@ -1,0 +1,19 @@
+<!--pages/help/help.wxml-->
+<view class='help-wrapper'>
+  <view class='list'>
+    <view class='column flex'>
+      <view class='column-left flex'>
+        <view class='left-top'>01</view>
+        <view class='left-middle'></view>
+        <view class='left-bottom flex'>
+          <image src="/images/help/downArrow.png"></image>
+          <image src="/images/help/downArrow.png"></image>
+        </view>
+      </view>
+      <view class='column-right flex'>
+        <view>流程步骤的说明</view>
+        <image></image>
+      </view>
+    </view>
+  </view>
+</view>
