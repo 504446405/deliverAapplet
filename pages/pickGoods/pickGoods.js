@@ -1,25 +1,35 @@
 // pages/pickGoods/pickGoods.js
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
+    // 订单详情数据
+    goods: {
+      name: 1
+    },
+    // 酒数量
     num: 123
   },
   affirmNum() {
+
     wx.showModal({
       title: '确认提货信息',
       content: `A酒(${this.data.num}瓶)`,
       success(res) {
         if (res.confirm) {
           console.log('用户点击确定')
+          wx.showToast({
+            title: '提货完成',
+            icon: 'success',
+            duration: 2000
+          })
+          // 同时返回到订单公海页面
         } else if (res.cancel) {
           console.log('用户点击取消')
         }
       }
     })
-    注意
   },
   /**
    * 生命周期函数--监听页面加载

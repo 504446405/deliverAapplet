@@ -1,30 +1,61 @@
-// pages/orderDetails/orderDatails.js
+// pages/orderUnderway/orderUnderway.js
 Page({
+
   /**
    * 页面的初始数据
    */
   data: {
+    // 订单详情显示隐藏变量
+    detailsBl: true,
+    // 资料填写详情显示隐藏变量
+    dataBl:true,
+    // 订单详情数据
+    obj:{},
+    // 弹框变量
     showModalBl: false
   },
-  // 确定抢单 弹出框
-  alertShow() {
+  // 下拉显示函数 订单
+  pullDownShowDetails() {
+    this.setData({
+      detailsBl: !this.data.detailsBl
+    })
+  },
+   // 下拉显示函数 资料
+  pullDownShowFeast() {
+    this.setData({
+      dataBl: !this.data.dataBl
+    })
+  },
+  // 图片上传功能
+  addImage(){
+    wx.chooseImage({
+      count: 1,  //选择图片数量
+      sourceType: ['album', 'camera'], //图片来源
+      success(res) {
+        // tempFilePath可以作为img标签的src属性显示图片
+        // const tempFilePaths = res.tempFilePaths
+      }
+    })
+  },
+  // 信息填写完成 显示弹框
+  alertShow(){
     this.setData({
       showModalBl: true
     })
   },
-  // 取消抢单
-  cancel() {
+  // 取消函数
+  cancel(){
     this.setData({
       showModalBl: false
     })
   },
-  // 抢单
+  // 确认函数
   confirm(){
     this.setData({
       showModalBl: false
     })
     wx.showToast({
-      title: '抢单成功',
+      title: '提交成功',
       icon: 'success',
       duration: 1000
     })

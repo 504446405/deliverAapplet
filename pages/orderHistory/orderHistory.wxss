@@ -112,6 +112,7 @@
 }
 .orderHistory .orderHistory-expend .expend-img image {
   width: 288rpx;
+  height: 162rpx;
 }
 .orderHistory .orderHistory-end .end {
   display: flex;

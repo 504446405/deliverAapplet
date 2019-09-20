@@ -1,6 +1,6 @@
 <!--订单详情 抢单-->
 <view class="orderDatails">
-  <!-- 详情信息-->
+	<!-- 详情信息-->
 	<view class="orderDatails-data">
 		<view class="orderDatails-title">
 			详情
@@ -52,14 +52,14 @@
 			<view>
 				广州市黄浦区萝岗街道123号
 			</view>
-			<image style="width:24rpx;margin:24rpx 0 0 24rpx;" src="/images/orderIndex/address.png" mode="widthFix"/>
+			<image style="width:24rpx;margin:24rpx 0 0 24rpx;" src="/images/orderIndex/address.png" mode="widthFix" />
 		</view>
 		<view>
 			<view>
 				配酒公司:
 			</view>
 			<view>
-				白云配酒公司 
+				白云配酒公司
 			</view>
 		</view>
 		<view>
@@ -69,7 +69,7 @@
 			<view>
 				广州市白云区白云街555号
 			</view>
-			<image style="width:24rpx;margin:24rpx 0 0 24rpx;" src="/images/orderIndex/address.png" mode="widthFix"/>
+			<image style="width:24rpx;margin:24rpx 0 0 24rpx;" src="/images/orderIndex/address.png" mode="widthFix" />
 		</view>
 	</view>
 	<!--按钮-->
@@ -84,14 +84,16 @@
 			<view class="showModal-title">
 				抢单信息
 			</view>
-			<view class="showModal-time">
-				举办时间:
-			</view>
-			<view class="showModal-address">
-				举办地址:
-			</view>
-			<view class="showModal-site">
-				配酒地址: 
+			<view>
+				<view class="showModal-time">
+					举办时间:
+				</view>
+				<view class="showModal-address">
+					举办地址:
+				</view>
+				<view class="showModal-site">
+					配酒地址:
+				</view>
 			</view>
 			<view class="showModal-footer">
 				<view bindtap="cancel">
