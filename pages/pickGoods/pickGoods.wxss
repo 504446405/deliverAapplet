@@ -23,3 +23,66 @@
   border-radius: 10rpx;
   color: #ffffff;
 }
+.showModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+}
+.showModal .showModal-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600rpx;
+  background: #ffffff;
+  border-radius: 20rpx;
+  padding-bottom: 104rpx;
+}
+.showModal .showModal-title {
+  height: 34rpx;
+  line-height: 34rpx;
+  font-size: 34rpx;
+  text-align: center;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #333333;
+  margin: 40rpx 0;
+}
+.showModal .showModal-time,
+.showModal .showModal-address,
+.showModal .showModal-site {
+  width: 100%;
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #666666;
+  padding: 0 80rpx 30rpx;
+}
+.showModal .showModal-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 104rpx;
+  border-top: 2rpx solid #eaeaea;
+  font-size: 34rpx;
+}
+.showModal .showModal-footer view {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.showModal .showModal-footer view:first-child {
+  font-family: PingFang SC;
+  color: #999999;
+  border-right: 2rpx solid #eaeaea;
+}
+.showModal .showModal-footer view:last-child {
+  font-family: PingFang SC;
+  color: #a32635;
+}

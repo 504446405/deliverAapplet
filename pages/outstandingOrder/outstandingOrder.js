@@ -1,18 +1,26 @@
-// pages/pickGoods/pickGoods.js
+// pages/outstandingOrder/outstandingOrder.js
 Page({
+
   /**
    * 页面的初始数据
    */
   data: {
-    // 订单详情数据
-    goods: {
-      name: 1
-    },
     // 弹框变量
     showModalBl: false
   },
-  // 显示弹框
-  affirmNum() {
+  // 图片上传功能
+  addImage() {
+    wx.chooseImage({
+      count: 1,  //选择图片数量
+      sourceType: ['album', 'camera'], //图片来源
+      success(res) {
+        // tempFilePath可以作为img标签的src属性显示图片
+        // const tempFilePaths = res.tempFilePaths
+      }
+    })
+  },
+  // 信息填写完成 显示弹框
+  alertShow() {
     this.setData({
       showModalBl: true
     })
@@ -28,10 +36,15 @@ Page({
     this.setData({
       showModalBl: false
     })
-    wx.showToast({
-      title: '提交成功',
-      icon: 'success',
-      duration: 1000
+    wx.showModal({
+      title: '恭喜你',
+      showCancel: false,
+      content: '2019/08/29 订单完成',
+      success(res) {
+        if (res.confirm) {
+          console.log('用户点击确定')
+        }
+      }
     })
   },
   /**

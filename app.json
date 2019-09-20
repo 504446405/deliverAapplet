@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/outstandingOrder/outstandingOrder",
     "pages/orderUnderway/orderUnderway",
     "pages/help/help",
     "pages/orderIndex/orderIndex",

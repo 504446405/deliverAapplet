@@ -39,7 +39,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 6,
+			"current": 10,
 			"list": [
 				{
 					"id": -1,
@@ -108,6 +108,13 @@
 					"id": -1,
 					"name": "订单进行中",
 					"pathName": "pages/orderUnderway/orderUnderway",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "待结订单详情",
+					"pathName": "pages/outstandingOrder/outstandingOrder",
 					"query": "",
 					"scene": null
 				}
