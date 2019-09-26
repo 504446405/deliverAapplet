@@ -6,7 +6,6 @@
     "pages/orderIndex/orderIndex",
     "pages/login/login",
     "pages/index/index",
-    "pages/logs/logs",
     "pages/orderDetails/orderDatails",
     "pages/orderHistory/orderHistory",
     "pages/prepare/prepare",

@@ -1,3 +1,13 @@
+.scroll-view-one{
+  
+}
+.scroll-view-two{
+  height:100vh;
+  padding-top:40rpx;
+}
+
+
+
 /* pages/orderIndex/orderIndex.wxss */
 page{
   background:rgba(248,248,248,1);

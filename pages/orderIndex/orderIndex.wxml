@@ -10,9 +10,9 @@
     <view class='option-wrapper flex' bindtap="selectOption" data-index="0"><text class="{{currentIdx=='0'?'active':''}}" >订单公海</text></view>
     <view class='option-wrapper flex' bindtap="selectOption" data-index="1"><text class="{{currentIdx=='1'?'active':''}}" >完成订单</text></view>
   </view>
-  
-  <view class='list-wrapper' wx:if="{{hasList}}">
-    <view class='accept-list' wx:if="{{currentIdx=='0'}}">
+  <scroll-view class="scroll-view-one" scroll-y bindscrolltolower="fn">
+    <view class='list-wrapper' wx:if="{{hasList}}">
+     <view class='accept-list' wx:if="{{currentIdx=='0'}}">
       <view class='item flex'>
         <view class='item-top flex' bindtap="skipDetails">
           <view class='item-top-left flex'>
@@ -63,8 +63,8 @@
           <text>2019/10/10 11:00</text>
         </view>
       </view>
-    </view>
-    <view wx:else class='complete-list'>
+     </view>
+     <view wx:else class='complete-list'>
       <view class='column'>
         <view class='column-top flex'>
           <view class='column-top-top'>
@@ -97,12 +97,14 @@
           <view class='column-bottom-right'>订单状态</view>
         </view>
       </view>
-    </view>
-  </view>
-  <view class='placeholder-wrapper flex' wx:else>
-    <image src="/images/orderIndex/default.png"></image>
-    <text>暂无可抢订单</text>
-  </view>
+     </view>
+     </view>
+     <view class='placeholder-wrapper flex' wx:else>
+      <image src="/images/orderIndex/default.png"></image>
+      <text>暂无可抢订单</text>
+    </view> 
+  </scroll-view>
+  <!--左部用户信息-->
   <view class='user-wrapper' wx:if="{{showUser}}" catchtap="goHideShow">
     <view class="user flex" style="left:{{userLeft}}rpx">
       <view class='user-top flex'>
@@ -120,6 +122,7 @@
       </view>
     </view>
   </view>
+  <!--底部抢单列表-->
   <view class='alert-wrapper {{isShowAlert?"show":""}}'>
     <view class='alert-header flex'> 
       <view class='header-left'></view>
@@ -130,8 +133,9 @@
     </view>
     <view class='alert-list-wrapper'>
       <view class='alert-title'>抢单列表</view>
-      <view class='alert-list'>
-      <view class='alert-item '>
+      <scroll-view  class="scroll-view-two" scroll-y>
+       <view class='alert-list'>
+         <view class='alert-item '>
           <view class='alert-item-top flex'>
             <view class='top-status flex first'>订单状态</view>
           </view>
@@ -150,8 +154,8 @@
               <image src='/images/orderIndex/rightArrow.png'></image>
             </view>
           </view>
-        </view>
-        <view class='alert-item'>
+         </view>
+         <view class='alert-item'>
           <view class='alert-item-top flex'>
             <view class='top-status flex'>订单状态</view>
           </view>
@@ -170,8 +174,8 @@
               <image src='/images/orderIndex/rightArrow.png'></image>
             </view>
           </view>
-        </view>
-        <view class='alert-item'>
+         </view>
+         <view class='alert-item'>
           <view class='alert-item-top flex'>
             <view class='top-status flex'>订单状态</view>
           </view>
@@ -190,8 +194,8 @@
               <image src='/images/orderIndex/rightArrow.png'></image>
             </view>
           </view>
-        </view>
-        <view class='alert-item'>
+         </view>
+         <view class='alert-item'>
           <view class='alert-item-top flex'>
             <view class='top-status flex'>订单状态</view>
           </view>
@@ -210,8 +214,8 @@
               <image src='/images/orderIndex/rightArrow.png'></image>
             </view>
           </view>
-        </view>
-        <view class='alert-item'>
+         </view>
+         <view class='alert-item'>
           <view class='alert-item-top flex'>
             <view class='top-status flex'>订单状态</view>
           </view>
@@ -230,8 +234,8 @@
               <image src='/images/orderIndex/rightArrow.png'></image>
             </view>
           </view>
-        </view>
-        <view class='alert-item'>
+         </view>
+         <view class='alert-item'>
           <view class='alert-item-top flex'>
             <view class='top-status flex'>订单状态</view>
           </view>
@@ -250,8 +254,8 @@
               <image src='/images/orderIndex/rightArrow.png'></image>
             </view>
           </view>
-        </view>
-        <view class='alert-item'>
+         </view>
+         <view class='alert-item'>
           <view class='alert-item-top flex'>
             <view class='top-status flex'>订单状态</view>
           </view>
@@ -270,8 +274,8 @@
               <image src='/images/orderIndex/rightArrow.png'></image>
             </view>
           </view>
-        </view>
-        <view class='alert-item'>
+         </view>
+         <view class='alert-item'>
           <view class='alert-item-top flex'>
             <view class='top-status flex'>订单状态</view>
           </view>
@@ -290,8 +294,8 @@
               <image src='/images/orderIndex/rightArrow.png'></image>
             </view>
           </view>
-        </view>
-        <view class='alert-item'>
+         </view>
+         <view class='alert-item'>
           <view class='alert-item-top flex'>
             <view class='top-status flex'>订单状态</view>
           </view>
@@ -310,8 +314,8 @@
               <image src='/images/orderIndex/rightArrow.png'></image>
             </view>
           </view>
-        </view>
-        <view class='alert-item'>
+         </view>
+         <view class='alert-item'>
           <view class='alert-item-top flex'>
             <view class='top-status flex'>订单状态</view>
           </view>
@@ -330,8 +334,8 @@
               <image src='/images/orderIndex/rightArrow.png'></image>
             </view>
           </view>
-        </view>
-        <view class='alert-item'>
+         </view>
+         <view class='alert-item'>
           <view class='alert-item-top flex'>
             <view class='top-status flex'>订单状态</view>
           </view>
@@ -350,8 +354,8 @@
               <image src='/images/orderIndex/rightArrow.png'></image>
             </view>
           </view>
-        </view>
-        <view class='alert-item'>
+         </view>
+         <view class='alert-item'>
           <view class='alert-item-top flex'>
             <view class='top-status flex'>订单状态</view>
           </view>
@@ -370,10 +374,12 @@
               <image src='/images/orderIndex/rightArrow.png'></image>
             </view>
           </view>
-        </view>
-      </view>
+         </view>
+       </view>
+     </scroll-view>
     </view>
   </view>
+  <!--弹框接收派送任务-->
   <view class='distribute-wrapper' wx:if="{{isShowDistribute}}">
     <view class='distribute'>
       <view class='content-wrapper flex' wx:if="{{!isShowNext}}">

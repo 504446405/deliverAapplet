@@ -1,3 +1,27 @@
+<!--tab栏-->
+<view class="tab">
+	<view class="tab-left" data-index="1" bindtap="switcherFn">
+		<view class="{{!tabBl?'tab-left-one':'tab-color'}}">
+			邀请二维码
+		</view>
+		<view class="{{!tabBl?'tab-left-two':'tab-bgc'}}">
+		</view>
+	</view>
+	<view class="tab-right" data-index="2" bindtap="switcherFn">
+		<view class="{{tabBl?'tab-right-one':'tab-color'}}">
+			订单详情
+		</view>
+		<view class="{{tabBl?'tab-right-two':'tab-bgc'}}">
+		</view>
+	</view>
+</view>
+
+<view style="height:100rpx;">
+</view>
+
+<!--订单进行中-->
+<!-- 订单进行中-->
+<block wx:if="{{!tabBl}}">
 <view class="outstandingOrder-body">
 	<view class="outstandingOrder-details">
 		<view class="outstandingOrder-title">
@@ -100,4 +124,8 @@
 		</view>
 	</view>
 </view>
-
+</block>
+<!--二维码-->
+<block wx:else>
+	二维码
+</block>

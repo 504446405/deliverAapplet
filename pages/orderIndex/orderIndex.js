@@ -1,6 +1,6 @@
+import { request } from "../../request/index.js";
 // pages/orderIndex/orderIndex.js
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -121,12 +121,28 @@ Page({
     }
     console.log(this.data.currentIdx)
   },
+  fn(){
+    
+  },
   // 自写
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    request({
+      method: "POST",
+      url: '/deliveryMan/getBanquetList',
+      data: {
+        "pageNum": 1,
+        "pageSize": 10,
+        "sortName": "",
+        "sortOrder": ""
+      }
+    }).then(res => {
+      console.log(res,1)
+    }).catch(err => {
+      console.log(err)
+    })
   },
 
   /**
@@ -161,14 +177,14 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+    console.log("加载1")
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
+    console.log("加载2")
   },
 
   /**

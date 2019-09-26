@@ -5,8 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
+    // tab栏切换变量
+    tabBl: false,
     // 弹框变量
     showModalBl: false
+  },
+  // tab栏切换函数
+  switcherFn(e) {
+    let { index } = e.currentTarget.dataset
+    if (index == 1) {
+      this.setData({
+        tabBl: true
+      })
+    } else {
+      this.setData({
+        tabBl: false
+      })
+    }
   },
   // 图片上传功能
   addImage() {

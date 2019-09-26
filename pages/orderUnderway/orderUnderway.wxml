@@ -1,5 +1,27 @@
+<!--tab栏-->
+<view class="tab">
+	<view class="tab-left" data-index="1" bindtap="switcherFn">
+		<view class="{{!tabBl?'tab-left-one':'tab-color'}}">
+			邀请二维码
+		</view>
+		<view class="{{!tabBl?'tab-left-two':'tab-bgc'}}">
+		</view>
+	</view>
+	<view class="tab-right" data-index="2" bindtap="switcherFn">
+		<view class="{{tabBl?'tab-right-one':'tab-color'}}">
+			订单详情
+		</view>
+		<view class="{{tabBl?'tab-right-two':'tab-bgc'}}">
+		</view>
+	</view>
+</view>
+
+<view style="height:100rpx;">
+</view>
+
 <!-- 订单进行中-->
-<view style="padding-bottom:110rpx;">
+<block wx:if="{{!tabBl}}">
+ <view style="padding-bottom:110rpx;">
 	<scroll-view scroll-y class="orderUnderway">
 		<view style="height:30rpx;" />
 		<view class="orderUnderway-body">
@@ -183,7 +205,7 @@
 			</view>
 			<view>
 				<view class="showModal-time">
-					活动人数(150人)
+					活动人数(1150人)
 				</view>
 				<view class="showModal-address">
 					活动桌数(15桌)
@@ -202,5 +224,10 @@
 			</view>
 		</view>
 	</view>
-</view>
-
+ </view>
+</block>
+<!--二维码-->
+<block wx:else>
+	二维码
+</block>
+	
